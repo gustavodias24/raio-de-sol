@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Raio de Sol | Clínica de Estética Avançada em São José dos Pinhais</title>
-  <meta name="description" content="Tratamentos corporais e faciais, emagrecimento, Glúteo Natural e harmonização facial em São José dos Pinhais. Agende sua avaliação na Raio de Sol.">
+  <meta name="description" content="Tratamentos corporais e faciais, Body Slim, Sculp Glúteo, perfiloplastia e toxina botulínica em São José dos Pinhais. Agende sua avaliação na Raio de Sol.">
   <meta name="theme-color" content="#5b1735">
   <meta name="robots" content="index, follow">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Raio de Sol — Clínica de Estética Avançada">
-  <meta property="og:description" content="Beleza, bem-estar e resultados naturais com protocolos personalizados.">
+  <meta property="og:description" content="Beleza, bem-estar e resultados naturais com protocolos corporais e faciais personalizados.">
   <meta property="og:image" content="{{ url_for('static', filename='img/conteudo/profissional-raio-de-sol.webp', _external=True) }}">
   <link rel="icon" type="image/png" sizes="128x128" href="{{ url_for('static', filename='img/favicon.png') }}">
   <link rel="preload" as="image" href="{{ url_for('static', filename='img/conteudo/profissional-raio-de-sol.webp') }}">
@@ -142,7 +142,7 @@
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
     "name": "Raio de Sol Clínica de Estética Avançada",
-    "description": "Clínica de estética avançada especializada em emagrecimento, Glúteo Natural e harmonização facial.",
+    "description": "Clínica de estética avançada especializada em emagrecimento, Body Slim, Sculp Glúteo, perfiloplastia, toxina botulínica e harmonização facial.",
     "telephone": "+55 41 99800-4130",
     "image": "{{ url_for('static', filename='img/logo.png', _external=True) }}",
     "address": {
@@ -231,8 +231,8 @@
       <div class="container trust-strip__grid">
         <article><span>01</span><div><strong>Emagrecimento</strong><small>Protocolos corporais</small></div></article>
         <article><span>02</span><div><strong>Glúteo Natural</strong><small>Contorno e firmeza</small></div></article>
-        <article><span>03</span><div><strong>Harmonização facial</strong><small>Equilíbrio e leveza</small></div></article>
-        <article><span>04</span><div><strong>Estética avançada</strong><small>Tecnologia e cuidado</small></div></article>
+        <article><span>03</span><div><strong>Perfiloplastia</strong><small>Harmonia do perfil</small></div></article>
+        <article><span>04</span><div><strong>Toxina botulínica</strong><small>Expressão e leveza</small></div></article>
       </div>
     </section>
 
@@ -252,12 +252,35 @@
           <p class="eyebrow"><span></span> Sobre a Raio de Sol</p>
           <h2>Estética que acolhe, entende e <em>valoriza você.</em></h2>
           <p>Na Raio de Sol, cada atendimento começa com escuta. Unimos estética avançada, técnicas atuais e uma visão cuidadosa para criar protocolos alinhados ao seu corpo, ao seu rosto e ao que você deseja transformar.</p>
-          <p>Nossa especialidade está nos tratamentos para emagrecimento, no protocolo Glúteo Natural e na harmonização facial com foco em equilíbrio — sempre preservando a sua identidade.</p>
+          <p>Nossa especialidade está nos tratamentos para emagrecimento, no Body Slim, no Sculp Glúteo e em cuidados faciais como perfiloplastia e toxina botulínica — sempre com foco em equilíbrio e preservação da sua identidade.</p>
           <div class="about__pillars">
             <div><span>✦</span><strong>Avaliação individual</strong><small>Seu protocolo nasce das suas necessidades.</small></div>
             <div><span>✦</span><strong>Beleza sem excessos</strong><small>Resultados elegantes e coerentes com você.</small></div>
           </div>
           <a class="text-link" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20a%20cl%C3%ADnica." target="_blank" rel="noopener">Conheça nosso atendimento <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="professional section" aria-labelledby="professional-title">
+      <div class="container professional__grid">
+        <figure class="professional__media reveal">
+          <img loading="lazy" src="{{ url_for('static', filename='img/conteudo/biografia-dra-cheila.webp') }}" width="904" height="1280" alt="Biografia profissional da Dra. Cheila da Silva Chavasco, CEO da Raio de Sol">
+        </figure>
+
+        <div class="professional__copy reveal reveal--delay">
+          <p class="eyebrow"><span></span> À frente da Raio de Sol</p>
+          <h2 id="professional-title">Dra. Cheila da Silva <em>Chavasco.</em></h2>
+          <p class="professional__role">Biomédica esteta, especialista em emagrecimento e terapeuta integrativa.</p>
+          <p>À frente da Raio de Sol Clínica de Estética Avançada Premium, a Dra. Cheila construiu uma trajetória que une ciência, técnica e sensibilidade. Cada protocolo é pensado para cuidar do corpo, da autoestima e da confiança de quem escolhe se tratar.</p>
+          <p>É autora dos métodos Body Slim By Dra. Cheila e Sculp Glúteo By Dra. Cheila, desenvolvidos com planejamento individual, acompanhamento próximo e atenção a cada detalhe.</p>
+          <blockquote>“Transformar corpos, resgatar autoestima e gerar resultados extraordinários é a minha missão.”</blockquote>
+          <div class="professional__credentials" aria-label="Formação e especialidades">
+            <span>Biomedicina estética</span>
+            <span>Emagrecimento</span>
+            <span>Terapia integrativa</span>
+          </div>
+          <a class="button button--primary" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Cheila." target="_blank" rel="noopener">Agendar avaliação <span>→</span></a>
         </div>
       </div>
     </section>
@@ -279,7 +302,63 @@
           <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/07-rejuvenescimento-facial.webp') }}" width="900" height="900" alt="Tratamento facial para cuidado e rejuvenescimento da pele"><div><span>02</span><h3>Rejuvenescimento</h3><p>Cuidado para viço, textura e aparência descansada.</p></div></article>
           <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/13-tecnologia-corporal.webp') }}" width="900" height="900" alt="Tecnologia aplicada a tratamento corporal"><div><span>03</span><h3>Estética corporal</h3><p>Tecnologias e técnicas alinhadas à sua avaliação.</p></div></article>
           <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/12-skin-care.webp') }}" width="900" height="900" alt="Protocolo de cuidado facial"><div><span>04</span><h3>Tratamentos faciais</h3><p>Protocolos para cuidar, renovar e iluminar a pele.</p></div></article>
+          <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/03-harmonizacao-facial.webp') }}" width="1200" height="900" alt="Planejamento facial personalizado para equilíbrio do perfil"><div><span>05</span><h3>Perfiloplastia</h3><p>Planejamento para valorizar proporções e harmonizar o perfil.</p></div></article>
+          <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/09-profissional-estetica.webp') }}" width="900" height="1200" alt="Profissional habilitada preparando um cuidado facial personalizado"><div><span>06</span><h3>Toxina botulínica</h3><p>Cuidado individualizado para suavizar linhas de expressão.</p></div></article>
         </div>
+      </div>
+    </section>
+
+    <section class="facial-focus section" aria-labelledby="facial-focus-title">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow"><span></span> Novos cuidados faciais</p>
+            <h2 id="facial-focus-title">Equilíbrio facial com <em>planejamento e naturalidade.</em></h2>
+          </div>
+          <p>Conheça duas possibilidades de cuidado que começam pela avaliação do seu rosto, da sua expressão e dos resultados que você deseja alcançar.</p>
+        </div>
+
+        <div class="facial-focus__grid">
+          <article class="procedure-card reveal">
+            <figure class="procedure-card__media procedure-card__media--landscape">
+              <img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-08-perfiloplastia.webp') }}" width="1280" height="961" alt="Comparativo lateral antes e depois de perfiloplastia">
+              <figcaption>Registro real autorizado pela clínica</figcaption>
+            </figure>
+            <div class="procedure-card__copy">
+              <span class="procedure-card__number">01</span>
+              <p class="eyebrow"><span></span> Perfiloplastia</p>
+              <h3>Proporções vistas de forma integrada.</h3>
+              <p>A perfiloplastia parte de uma análise do perfil facial para buscar mais equilíbrio entre estruturas como nariz, lábios, queixo e contorno. O planejamento é individual e pode envolver diferentes estratégias, sempre definidas após avaliação.</p>
+              <ul>
+                <li>Leitura cuidadosa das proporções do perfil</li>
+                <li>Plano alinhado aos seus traços e objetivos</li>
+                <li>Busca por harmonia sem descaracterizar o rosto</li>
+              </ul>
+              <a class="text-link" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20perfiloplastia." target="_blank" rel="noopener">Quero saber mais sobre perfiloplastia <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="procedure-card procedure-card--reverse reveal reveal--delay">
+            <figure class="procedure-card__media procedure-card__media--portrait">
+              <img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-09-toxina-botulinica.webp') }}" width="720" height="1280" alt="Comparativo antes e depois de aplicação de toxina botulínica na região da testa">
+              <figcaption>Registro real autorizado pela clínica</figcaption>
+            </figure>
+            <div class="procedure-card__copy">
+              <span class="procedure-card__number">02</span>
+              <p class="eyebrow"><span></span> Toxina botulínica</p>
+              <h3>Expressão preservada, aparência mais leve.</h3>
+              <p>A toxina botulínica pode ser indicada para suavizar linhas que aparecem com o movimento, como as da testa e entre as sobrancelhas. A escolha dos pontos e da quantidade considera a anatomia e a expressão de cada pessoa.</p>
+              <ul>
+                <li>Planejamento personalizado dos pontos de aplicação</li>
+                <li>Foco em um resultado equilibrado e coerente</li>
+                <li>Orientações individuais antes e depois do procedimento</li>
+              </ul>
+              <a class="text-link" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20toxina%20botul%C3%ADnica." target="_blank" rel="noopener">Quero saber mais sobre toxina botulínica <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <p class="facial-focus__safety reveal"><strong>Segurança em primeiro lugar:</strong> procedimentos injetáveis dependem de avaliação, indicação individual, profissional habilitada, estabelecimento autorizado e produtos regularizados pela Anvisa. Contraindicações, cuidados, duração e resultados são explicados durante a consulta.</p>
       </div>
     </section>
 
@@ -479,6 +558,26 @@
           <small>Registro autorizado pela clínica</small>
         </figcaption>
       </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-10-contorno-labial.webp') }}"
+            width="961"
+            height="1280"
+            style="height: auto;"
+            alt="Comparativo antes e depois de tratamento para contorno labial"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Contorno labial</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
     </div>
 
     <p class="results__disclaimer">
@@ -496,7 +595,7 @@
             <p class="eyebrow"><span></span> Conteúdos Raio de Sol</p>
             <h2 id="content-showcase-title">Informação, experiências e <em>evoluções reais.</em></h2>
           </div>
-          <p>Assista aos conteúdos da clínica, conheça histórias compartilhadas por clientes e veja mais detalhes dos protocolos corporais.</p>
+          <p>Assista aos conteúdos da clínica, conheça histórias compartilhadas por clientes e veja mais detalhes dos protocolos corporais e faciais.</p>
         </div>
 
         <article class="video-feature reveal">
@@ -544,6 +643,11 @@
             <div class="video-card__media"><video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-07.jpg') }}" aria-label="Comparativo frontal de evolução com o Body Slim"><source src="{{ url_for('static', filename='video/07-evolucao-body-slim-frontal.mp4') }}" type="video/mp4">Seu navegador não oferece suporte à reprodução de vídeo.</video></div>
             <figcaption><strong>Body Slim — frontal</strong><span>Comparativo visual da evolução corporal.</span></figcaption>
           </figure>
+
+          <figure class="video-card reveal">
+            <div class="video-card__media"><video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-08.jpg') }}" aria-label="Comparativo antes e depois de toxina botulínica na testa"><source src="{{ url_for('static', filename='video/08-resultado-toxina-botulinica.mp4') }}" type="video/mp4">Seu navegador não oferece suporte à reprodução de vídeo.</video></div>
+            <figcaption><strong>Toxina botulínica</strong><span>Registro comparativo da suavização de linhas da testa.</span></figcaption>
+          </figure>
         </div>
 
         <p class="content-showcase__disclaimer">Os registros mostram experiências individuais. Resultados variam conforme características, hábitos e resposta de cada pessoa; a indicação de qualquer protocolo depende de avaliação.</p>
@@ -587,6 +691,14 @@
             <div class="accordion__panel"><p>O tempo varia conforme o tratamento e as características individuais. Durante a avaliação, explicamos a evolução esperada sem promessas irreais.</p></div>
           </article>
           <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false"><span>O que é perfiloplastia?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="accordion__panel"><p>É um planejamento voltado à harmonia do perfil facial. A avaliação considera as proporções entre diferentes estruturas do rosto e define, de forma individual, quais cuidados podem ser indicados.</p></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false"><span>A toxina botulínica deixa o rosto sem expressão?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="accordion__panel"><p>O planejamento busca suavizar linhas de movimento preservando uma aparência equilibrada. Pontos, quantidade, contraindicações e resultado esperado são definidos e explicados após avaliação individual.</p></div>
+          </article>
+          <article class="accordion__item">
             <h3><button type="button" aria-expanded="false"><span>Como faço para agendar?</span><i aria-hidden="true">+</i></button></h3>
             <div class="accordion__panel"><p>Você pode usar qualquer botão de WhatsApp do site ou preencher o formulário abaixo. A equipe dará continuidade ao agendamento.</p></div>
           </article>
@@ -619,6 +731,8 @@
               <option>Protocolo Body Slim</option>
               <option>Glúteo Natural</option>
               <option>Harmonização facial</option>
+              <option>Perfiloplastia</option>
+              <option>Toxina botulínica</option>
               <option>Preenchimento labial</option>
               <option>Tratamentos faciais</option>
             </select>

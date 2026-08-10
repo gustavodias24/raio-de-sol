@@ -698,6 +698,103 @@ h2 em {
   font-size: 0.75rem;
 }
 
+.professional {
+  position: relative;
+  color: #fff;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(210, 170, 92, 0.16), transparent 28%),
+    radial-gradient(circle at 91% 86%, rgba(168, 60, 103, 0.16), transparent 30%),
+    var(--wine-950);
+  overflow: hidden;
+}
+
+.professional::before {
+  position: absolute;
+  top: -210px;
+  right: -130px;
+  width: 520px;
+  height: 520px;
+  content: "";
+  border: 1px solid rgba(236, 211, 154, 0.13);
+  border-radius: 50%;
+}
+
+.professional__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1.12fr);
+  gap: clamp(56px, 8vw, 110px);
+  align-items: center;
+}
+
+.professional__media {
+  margin: 0;
+  padding: 10px;
+  background: linear-gradient(145deg, rgba(236, 211, 154, 0.7), rgba(168, 60, 103, 0.25));
+  border: 1px solid rgba(236, 211, 154, 0.35);
+  border-radius: 28px;
+  box-shadow: 0 28px 75px rgba(0, 0, 0, 0.28);
+}
+
+.professional__media img {
+  width: 100%;
+  height: auto;
+  background: #1e0a15;
+  border-radius: 20px;
+}
+
+.professional__copy h2 {
+  margin: 0;
+  color: #fff;
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 4.8vw, 4.8rem);
+  font-weight: 400;
+  letter-spacing: -0.038em;
+  line-height: 1.02;
+}
+
+.professional__role {
+  margin: 20px 0 26px;
+  color: var(--gold-300);
+  font-family: var(--serif);
+  font-size: 1.18rem;
+}
+
+.professional__copy > p:not(.eyebrow):not(.professional__role) {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.professional__copy blockquote {
+  margin: 30px 0;
+  padding: 4px 0 4px 24px;
+  color: #fff;
+  border-left: 2px solid var(--gold-500);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.3vw, 2rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.professional__credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 32px;
+}
+
+.professional__credentials span {
+  padding: 8px 13px;
+  color: var(--gold-300);
+  border: 1px solid rgba(236, 211, 154, 0.24);
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .text-link {
   display: inline-flex;
   gap: 12px;
@@ -844,7 +941,7 @@ h2 em {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
   margin-top: 42px;
 }
@@ -902,6 +999,164 @@ h2 em {
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
   font-size: 0.7rem;
+}
+
+.facial-focus {
+  background:
+    radial-gradient(circle at 94% 8%, rgba(210, 170, 92, 0.12), transparent 24%),
+    var(--ivory);
+}
+
+.facial-focus__grid {
+  display: grid;
+  gap: 28px;
+}
+
+.procedure-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.procedure-card--reverse .procedure-card__media {
+  order: 2;
+}
+
+.procedure-card__media {
+  position: relative;
+  display: grid;
+  min-height: 540px;
+  margin: 0;
+  padding: clamp(20px, 3vw, 34px);
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.9), transparent 42%),
+    #eee3df;
+}
+
+.procedure-card__media img {
+  width: 100%;
+  height: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(62, 21, 38, 0.12);
+}
+
+.procedure-card__media--landscape img {
+  height: auto;
+}
+
+.procedure-card__media figcaption {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  width: max-content;
+  max-width: calc(100% - 40px);
+  padding: 7px 12px;
+  color: #fff;
+  background: rgba(43, 12, 28, 0.78);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  transform: translateX(-50%);
+  font-size: 0.62rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.procedure-card__copy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(38px, 6vw, 74px);
+}
+
+.procedure-card__number {
+  position: absolute;
+  top: 28px;
+  right: 34px;
+  color: rgba(85, 21, 48, 0.08);
+  font-family: var(--serif);
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 1;
+}
+
+.procedure-card__copy .eyebrow {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+}
+
+.procedure-card__copy h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--wine-950);
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+}
+
+.procedure-card__copy > p:not(.eyebrow) {
+  margin: 22px 0 20px;
+  color: var(--muted);
+}
+
+.procedure-card__copy ul {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.procedure-card__copy li {
+  position: relative;
+  padding-left: 24px;
+  color: #4d3c42;
+  font-size: 0.8rem;
+}
+
+.procedure-card__copy li::before {
+  position: absolute;
+  top: 0.62em;
+  left: 2px;
+  width: 7px;
+  height: 7px;
+  content: "";
+  background: var(--gold-500);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(210, 170, 92, 0.15);
+}
+
+.procedure-card__copy .text-link {
+  align-self: flex-start;
+}
+
+.facial-focus__safety {
+  max-width: 980px;
+  margin: 34px auto 0;
+  padding: 20px 24px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold-500);
+  border-radius: 14px;
+  font-size: 0.76rem;
+  text-align: center;
+}
+
+.facial-focus__safety strong {
+  color: var(--wine-800);
 }
 
 .signature {
@@ -1844,6 +2099,8 @@ h2 em {
   }
 
   .about__grid,
+  .professional__grid,
+  .procedure-card,
   .signature__grid,
   .faq__grid,
   .contact__grid {
@@ -1852,6 +2109,30 @@ h2 em {
 
   .about__media {
     width: min(100%, 700px);
+  }
+
+  .professional__media {
+    width: min(100%, 540px);
+    margin-inline: auto;
+  }
+
+  .procedure-card--reverse .procedure-card__media {
+    order: 0;
+  }
+
+  .procedure-card__media {
+    min-height: 0;
+  }
+
+  .procedure-card__media img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 650px;
+  }
+
+  .procedure-card__media--landscape img {
+    width: 100%;
   }
 
   .feature-cards {
@@ -2031,6 +2312,7 @@ h2 em {
   }
 
   .about__copy h2,
+  .professional__copy h2,
   .section-heading h2,
   .faq__intro h2,
   .contact__info h2,
@@ -2060,6 +2342,45 @@ h2 em {
 
   .service-card {
     min-height: 380px;
+  }
+
+  .professional__media {
+    padding: 7px;
+    border-radius: 22px;
+  }
+
+  .professional__media img {
+    border-radius: 16px;
+  }
+
+  .professional__credentials {
+    gap: 7px;
+  }
+
+  .procedure-card {
+    border-radius: 24px;
+  }
+
+  .procedure-card__media {
+    padding: 16px;
+  }
+
+  .procedure-card__media img {
+    max-height: 560px;
+  }
+
+  .procedure-card__copy {
+    padding: 38px 24px 42px;
+  }
+
+  .procedure-card__number {
+    top: 22px;
+    right: 22px;
+  }
+
+  .facial-focus__safety {
+    padding: 18px;
+    text-align: left;
   }
 
   .signature__visual {
