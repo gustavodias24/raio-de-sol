@@ -15,6 +15,128 @@
   <link rel="icon" type="image/png" sizes="128x128" href="{{ url_for('static', filename='img/favicon.png') }}">
   <link rel="preload" as="image" href="{{ url_for('static', filename='img/generated/01-hero-raio-de-sol.webp') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <style>
+    /*
+      Correção do menu mobile dentro do próprio index.html.
+      No Safari/iOS, backdrop-filter cria um novo bloco de referência para
+      elementos fixed. Sem esta correção, o menu fica limitado ao cabeçalho.
+    */
+    @media (max-width: 900px) {
+      html.menu-open,
+      body.menu-open {
+        overflow: hidden !important;
+        overscroll-behavior: none;
+      }
+
+      .site-header {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+      }
+
+      body.menu-open .site-header {
+        background: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+      }
+
+      .menu-toggle {
+        position: relative;
+        z-index: 1003 !important;
+        display: block !important;
+        flex: 0 0 46px;
+        background: rgba(255, 250, 245, 0.96) !important;
+      }
+
+      .brand {
+        position: relative;
+        z-index: 1003 !important;
+      }
+
+      .nav {
+        position: fixed !important;
+        inset: 0 !important;
+        z-index: 1001 !important;
+        display: flex !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        min-height: 100dvh !important;
+        padding:
+          calc(128px + env(safe-area-inset-top))
+          24px
+          calc(36px + env(safe-area-inset-bottom)) !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: clamp(10px, 2.4vh, 20px) !important;
+        overflow-y: auto !important;
+        overscroll-behavior: contain;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        background:
+          radial-gradient(circle at 82% 12%, rgba(210, 170, 92, 0.18), transparent 26%),
+          linear-gradient(145deg, #fffaf5 0%, #f8eee8 100%) !important;
+        transform: translateY(-12px) !important;
+        transition:
+          opacity 0.25s ease,
+          transform 0.25s ease,
+          visibility 0.25s ease !important;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      body.menu-open .nav {
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: translateY(0) !important;
+      }
+
+      .nav > a:not(.nav__cta) {
+        display: block;
+        width: min(100%, 340px);
+        padding: 5px 0;
+        color: #551530 !important;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif !important;
+        font-size: clamp(1.72rem, 7vw, 2.25rem) !important;
+        font-weight: 400 !important;
+        line-height: 1.12;
+      }
+
+      .nav > a:not(.nav__cta)::after {
+        display: none !important;
+      }
+
+      .nav__cta {
+        width: min(100%, 300px);
+        min-height: 52px !important;
+        margin-top: 8px !important;
+        padding-inline: 22px !important;
+      }
+
+      body.menu-open .whatsapp-float {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+
+    @media (max-width: 900px) and (max-height: 650px) {
+      .nav {
+        justify-content: flex-start !important;
+        gap: 7px !important;
+        padding-top: calc(100px + env(safe-area-inset-top)) !important;
+      }
+
+      .nav > a:not(.nav__cta) {
+        font-size: 1.45rem !important;
+      }
+
+      .nav__cta {
+        min-height: 46px !important;
+      }
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -359,6 +481,162 @@
     <span class="whatsapp-float__label">Fale conosco</span>
   </a>
 
-  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+  <script>
+    (() => {
+      const body = document.body;
+      const root = document.documentElement;
+      const header = document.querySelector('.site-header');
+      const menuButton = document.querySelector('.menu-toggle');
+      const navigation = document.querySelector('#menu-principal');
+      const mobileBreakpoint = window.matchMedia('(max-width: 900px)');
+
+      const syncMenuAccessibility = () => {
+        if (!navigation) return;
+
+        if (mobileBreakpoint.matches) {
+          navigation.setAttribute(
+            'aria-hidden',
+            body.classList.contains('menu-open') ? 'false' : 'true'
+          );
+        } else {
+          navigation.removeAttribute('aria-hidden');
+        }
+      };
+
+      const closeMenu = ({ restoreFocus = false } = {}) => {
+        body.classList.remove('menu-open');
+        root.classList.remove('menu-open');
+
+        if (menuButton) {
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Abrir menu');
+          if (restoreFocus) menuButton.focus();
+        }
+
+        syncMenuAccessibility();
+      };
+
+      const openMenu = () => {
+        if (!menuButton || !navigation || !mobileBreakpoint.matches) return;
+
+        body.classList.add('menu-open');
+        root.classList.add('menu-open');
+        menuButton.setAttribute('aria-expanded', 'true');
+        menuButton.setAttribute('aria-label', 'Fechar menu');
+        syncMenuAccessibility();
+
+        window.requestAnimationFrame(() => {
+          navigation.querySelector('a')?.focus();
+        });
+      };
+
+      if (menuButton && navigation) {
+        syncMenuAccessibility();
+
+        menuButton.addEventListener('click', () => {
+          if (body.classList.contains('menu-open')) {
+            closeMenu();
+          } else {
+            openMenu();
+          }
+        });
+
+        navigation.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => closeMenu());
+        });
+
+        navigation.addEventListener('click', (event) => {
+          if (event.target === navigation) closeMenu();
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (!body.classList.contains('menu-open')) return;
+
+          if (event.key === 'Escape') {
+            event.preventDefault();
+            closeMenu({ restoreFocus: true });
+            return;
+          }
+
+          if (event.key === 'Tab') {
+            const focusable = [
+              menuButton,
+              ...navigation.querySelectorAll('a[href]')
+            ].filter((element) => element && !element.hasAttribute('disabled'));
+
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+
+            if (event.shiftKey && document.activeElement === first) {
+              event.preventDefault();
+              last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+              event.preventDefault();
+              first.focus();
+            }
+          }
+        });
+
+        const handleBreakpointChange = () => {
+          if (!mobileBreakpoint.matches) closeMenu();
+          syncMenuAccessibility();
+        };
+
+        if (typeof mobileBreakpoint.addEventListener === 'function') {
+          mobileBreakpoint.addEventListener('change', handleBreakpointChange);
+        } else {
+          mobileBreakpoint.addListener(handleBreakpointChange);
+        }
+      }
+
+      const updateHeader = () => {
+        header?.classList.toggle('is-scrolled', window.scrollY > 12);
+      };
+
+      updateHeader();
+      window.addEventListener('scroll', updateHeader, { passive: true });
+
+      document.querySelectorAll('.accordion__item button').forEach((button) => {
+        button.addEventListener('click', () => {
+          const currentItem = button.closest('.accordion__item');
+          const alreadyOpen = currentItem.classList.contains('is-open');
+
+          document.querySelectorAll('.accordion__item').forEach((item) => {
+            item.classList.remove('is-open');
+            item.querySelector('button')?.setAttribute('aria-expanded', 'false');
+          });
+
+          if (!alreadyOpen) {
+            currentItem.classList.add('is-open');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      const revealElements = document.querySelectorAll('.reveal');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        revealElements.forEach((element) => element.classList.add('is-visible'));
+      } else {
+        const observer = new IntersectionObserver(
+          (entries, activeObserver) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                activeObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -40px' }
+        );
+
+        revealElements.forEach((element) => observer.observe(element));
+      }
+
+      const year = document.getElementById('current-year');
+      if (year) year.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
