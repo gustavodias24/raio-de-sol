@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raio de Sol | Clínica de Estética Avançada em São José dos Pinhais</title>
+  <meta name="description" content="Tratamentos corporais e faciais, emagrecimento, Glúteo Natural e harmonização facial em São José dos Pinhais. Agende sua avaliação na Raio de Sol.">
+  <meta name="theme-color" content="#5b1735">
+  <meta name="robots" content="index, follow">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Raio de Sol — Clínica de Estética Avançada">
+  <meta property="og:description" content="Beleza, bem-estar e resultados naturais com protocolos personalizados.">
+  <meta property="og:image" content="{{ url_for('static', filename='img/generated/01-hero-raio-de-sol.webp', _external=True) }}">
+  <link rel="icon" type="image/png" sizes="128x128" href="{{ url_for('static', filename='img/favicon.png') }}">
+  <link rel="preload" as="image" href="{{ url_for('static', filename='img/generated/01-hero-raio-de-sol.webp') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Raio de Sol Clínica de Estética Avançada",
+    "description": "Clínica de estética avançada especializada em emagrecimento, Glúteo Natural e harmonização facial.",
+    "telephone": "+55 41 99800-4130",
+    "image": "{{ url_for('static', filename='img/logo.png', _external=True) }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida das Américas, 1884, sala 11",
+      "postalCode": "83030-640",
+      "addressLocality": "São José dos Pinhais",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "sameAs": ["{{ instagram_url }}"],
+    "url": "{{ request.url_root }}"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p>Estética avançada com cuidado individualizado</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=Avenida+das+Am%C3%A9ricas+1884+S%C3%A3o+Jos%C3%A9+dos+Pinhais+PR" target="_blank" rel="noopener">
+        Av. das Américas, 1884 — sala 11
+      </a>
+    </div>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Raio de Sol, voltar ao início">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" width="210" height="140" alt="Raio de Sol Clínica de Estética Avançada">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#sobre">A clínica</a>
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="nav__cta" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--one"></div>
+      <div class="hero__glow hero__glow--two"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span></span> Clínica de Estética Avançada</p>
+          <h1 id="hero-title">Sua melhor versão, com <em>naturalidade</em> e propósito.</h1>
+          <p class="hero__lead">Tratamentos corporais e faciais pensados para valorizar sua beleza, recuperar sua confiança e acompanhar seus objetivos de forma personalizada.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Raio%20de%20Sol." target="_blank" rel="noopener">
+              Agendar minha avaliação
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="button button--ghost" href="#tratamentos">Conhecer tratamentos</a>
+          </div>
+          <ul class="hero__checks" aria-label="Diferenciais">
+            <li>Atendimento acolhedor</li>
+            <li>Protocolos personalizados</li>
+            <li>Resultados naturais</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero__image-wrap">
+            <img src="{{ url_for('static', filename='img/generated/01-hero-raio-de-sol.webp') }}" width="1536" height="1024" alt="Cliente recebendo atendimento personalizado em uma clínica de estética premium">
+            <div class="hero__badge">
+              <span class="hero__badge-icon">✦</span>
+              <span><strong>Beleza que respeita</strong> sua individualidade</span>
+            </div>
+          </div>
+          <div class="hero__sun" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Principais especialidades">
+      <div class="container trust-strip__grid">
+        <article><span>01</span><div><strong>Emagrecimento</strong><small>Protocolos corporais</small></div></article>
+        <article><span>02</span><div><strong>Glúteo Natural</strong><small>Contorno e firmeza</small></div></article>
+        <article><span>03</span><div><strong>Harmonização facial</strong><small>Equilíbrio e leveza</small></div></article>
+        <article><span>04</span><div><strong>Estética avançada</strong><small>Tecnologia e cuidado</small></div></article>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <figure class="about__main-image">
+            <img loading="lazy" src="{{ url_for('static', filename='img/generated/05-recepcao-premium.webp') }}" width="1200" height="900" alt="Ambiente sofisticado e acolhedor de clínica de estética">
+          </figure>
+          <figure class="about__detail-image">
+            <img loading="lazy" src="{{ url_for('static', filename='img/generated/14-detalhes-spa.webp') }}" width="900" height="900" alt="Detalhes de cuidado em estética com toalhas e acessórios dourados">
+          </figure>
+          <span class="about__seal">Cuidado<br><strong>360°</strong></span>
+        </div>
+
+        <div class="about__copy reveal reveal--delay">
+          <p class="eyebrow"><span></span> Sobre a Raio de Sol</p>
+          <h2>Estética que acolhe, entende e <em>valoriza você.</em></h2>
+          <p>Na Raio de Sol, cada atendimento começa com escuta. Unimos estética avançada, técnicas atuais e uma visão cuidadosa para criar protocolos alinhados ao seu corpo, ao seu rosto e ao que você deseja transformar.</p>
+          <p>Nossa especialidade está nos tratamentos para emagrecimento, no protocolo Glúteo Natural e na harmonização facial com foco em equilíbrio — sempre preservando a sua identidade.</p>
+          <div class="about__pillars">
+            <div><span>✦</span><strong>Avaliação individual</strong><small>Seu protocolo nasce das suas necessidades.</small></div>
+            <div><span>✦</span><strong>Beleza sem excessos</strong><small>Resultados elegantes e coerentes com você.</small></div>
+          </div>
+          <a class="text-link" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20a%20cl%C3%ADnica." target="_blank" rel="noopener">Conheça nosso atendimento <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="treatments section section--tint" id="tratamentos">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow"><span></span> Tratamentos</p>
+            <h2>Protocolos que cuidam do seu <em>corpo e rosto.</em></h2>
+          </div>
+          <p>Uma jornada personalizada para quem deseja se sentir mais confiante, com acompanhamento próximo e escolhas que respeitam cada fase.</p>
+        </div>
+
+        <div class="feature-cards">
+          <article class="feature-card feature-card--large reveal">
+            <div class="feature-card__media">
+              <img loading="lazy" src="{{ url_for('static', filename='img/generated/02-tratamento-corporal.webp') }}" width="1200" height="900" alt="Tratamento corporal não invasivo realizado em clínica">
+              <span>Corporal</span>
+            </div>
+            <div class="feature-card__content">
+              <small>Redução de medidas • contorno • bem-estar</small>
+              <h3>Emagrecimento e definição corporal</h3>
+              <p>Protocolos combinados para acompanhar seus objetivos, trabalhar medidas, textura da pele e contorno corporal de forma individualizada.</p>
+              <a href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20os%20tratamentos%20para%20emagrecimento." target="_blank" rel="noopener" aria-label="Saber mais sobre emagrecimento e definição corporal">Quero saber mais <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card--large reveal reveal--delay">
+            <div class="feature-card__media">
+              <img loading="lazy" src="{{ url_for('static', filename='img/generated/04-gluteo-natural.webp') }}" width="1200" height="900" alt="Atendimento estético corporal para valorização do contorno dos glúteos">
+              <span>Exclusivo</span>
+            </div>
+            <div class="feature-card__content">
+              <small>Contorno • firmeza • naturalidade</small>
+              <h3>Glúteo Natural</h3>
+              <p>Um cuidado focado em valorizar o formato natural, melhorar a aparência da pele e realçar o contorno com planejamento personalizado.</p>
+              <a href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Quero%20conhecer%20o%20protocolo%20Gl%C3%BAteo%20Natural." target="_blank" rel="noopener" aria-label="Saber mais sobre Glúteo Natural">Quero saber mais <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card--large reveal">
+            <div class="feature-card__media">
+              <img loading="lazy" src="{{ url_for('static', filename='img/generated/03-harmonizacao-facial.webp') }}" width="1200" height="900" alt="Consulta personalizada de harmonização facial">
+              <span>Facial</span>
+            </div>
+            <div class="feature-card__content">
+              <small>Equilíbrio • suavidade • identidade</small>
+              <h3>Harmonização facial</h3>
+              <p>Planejamento cuidadoso para equilibrar proporções e valorizar os seus traços sem apagar aquilo que torna sua beleza única.</p>
+              <a href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" aria-label="Saber mais sobre harmonização facial">Quero saber mais <span>→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="service-grid reveal">
+          <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/11-preenchimento-labial.webp') }}" width="900" height="900" alt="Lábios com aparência natural"><div><span>01</span><h3>Preenchimento labial</h3><p>Contorno, hidratação e volume equilibrado.</p></div></article>
+          <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/07-rejuvenescimento-facial.webp') }}" width="900" height="900" alt="Tratamento facial para cuidado e rejuvenescimento da pele"><div><span>02</span><h3>Rejuvenescimento</h3><p>Cuidado para viço, textura e aparência descansada.</p></div></article>
+          <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/13-tecnologia-corporal.webp') }}" width="900" height="900" alt="Tecnologia aplicada a tratamento corporal"><div><span>03</span><h3>Estética corporal</h3><p>Tecnologias e técnicas alinhadas à sua avaliação.</p></div></article>
+          <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/12-skin-care.webp') }}" width="900" height="900" alt="Protocolo de cuidado facial"><div><span>04</span><h3>Tratamentos faciais</h3><p>Protocolos para cuidar, renovar e iluminar a pele.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="signature section">
+      <div class="container signature__grid">
+        <div class="signature__visual reveal">
+          <img loading="lazy" src="{{ url_for('static', filename='img/generated/06-consulta-emagrecimento.webp') }}" width="1200" height="900" alt="Avaliação corporal personalizada em clínica de estética">
+          <div class="signature__note"><span>Body</span><strong>Slim</strong><small>protocolo completo</small></div>
+        </div>
+        <div class="signature__copy reveal reveal--delay">
+          <p class="eyebrow eyebrow--light"><span></span> Protocolo em destaque</p>
+          <h2>Body Slim: uma estratégia completa para o seu processo.</h2>
+          <p>Mais do que um procedimento isolado, o Body Slim combina avaliação, acompanhamento e recursos estéticos escolhidos de acordo com o seu momento.</p>
+          <ul>
+            <li><span>01</span> Avaliação das suas necessidades e objetivos</li>
+            <li><span>02</span> Plano de cuidados personalizado</li>
+            <li><span>03</span> Acompanhamento da sua evolução</li>
+          </ul>
+          <a class="button button--gold" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20entender%20como%20funciona%20o%20Body%20Slim." target="_blank" rel="noopener">Quero conhecer o Body Slim <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow"><span></span> Experiência Raio de Sol</p>
+          <h2 id="experience-title">Cuidado em <em>cada detalhe.</em></h2>
+          <p>Um atendimento pensado para que você se sinta segura, respeitada e bem acolhida do início ao fim.</p>
+        </div>
+        <div class="experience__mosaic">
+          <figure class="experience__item experience__item--tall reveal"><img loading="lazy" src="{{ url_for('static', filename='img/generated/09-profissional-estetica.webp') }}" width="900" height="1200" alt="Imagem conceitual de uma profissional de estética em ambiente elegante"><figcaption>Escuta e confiança</figcaption></figure>
+          <figure class="experience__item reveal reveal--delay"><img loading="lazy" src="{{ url_for('static', filename='img/generated/10-sala-tratamento.webp') }}" width="1200" height="900" alt="Sala de tratamento confortável e organizada"><figcaption>Ambiente preparado</figcaption></figure>
+          <figure class="experience__item reveal"><img loading="lazy" src="{{ url_for('static', filename='img/generated/16-acompanhamento-personalizado.webp') }}" width="1200" height="900" alt="Profissional e cliente conversando durante um acompanhamento personalizado"><figcaption>Acompanhamento próximo</figcaption></figure>
+          <figure class="experience__item experience__item--wide reveal reveal--delay"><img loading="lazy" src="{{ url_for('static', filename='img/generated/08-bem-estar-confiante.webp') }}" width="1200" height="900" alt="Mulher adulta confiante e confortável com sua imagem"><figcaption>Confiança que se percebe</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="results section section--tint" id="resultados">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow"><span></span> Resultados reais</p>
+            <h2>Evoluções que contam <em>histórias.</em></h2>
+          </div>
+          <p>Conheça alguns registros de atendimentos realizados. Cada organismo responde de uma forma e os resultados podem variar.</p>
+        </div>
+
+        <div class="results__rail" role="region" aria-label="Galeria de resultados" tabindex="0">
+          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-01-frontal.webp') }}" width="900" height="1060" alt="Comparativo de evolução corporal frontal"><span>Antes</span><span>Depois</span></div><figcaption><strong>Evolução corporal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
+          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-02-lateral.webp') }}" width="900" height="1060" alt="Comparativo de evolução corporal lateral"><span>Antes</span><span>Depois</span></div><figcaption><strong>Contorno corporal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
+          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-03-abdomen.webp') }}" width="900" height="1060" alt="Comparativo de evolução na região abdominal"><span>Antes</span><span>Depois</span></div><figcaption><strong>Região abdominal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
+          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-04-labial.webp') }}" width="900" height="1060" alt="Comparativo de preenchimento labial natural"><span>Antes</span><span>Depois</span></div><figcaption><strong>Preenchimento labial</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
+          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-05-bodyslim.webp') }}" width="900" height="1060" alt="Comparativo de resultado do protocolo Body Slim"><span>Antes</span><span>Depois</span></div><figcaption><strong>Protocolo Body Slim</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
+        </div>
+        <p class="results__disclaimer">Imagens sem filtros de promessa. Resultados individuais variam conforme características, hábitos e resposta de cada pessoa. A indicação é definida após avaliação.</p>
+      </div>
+    </section>
+
+    <section class="journey section">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow"><span></span> Como funciona</p>
+          <h2>Seu cuidado começa com uma <em>boa conversa.</em></h2>
+        </div>
+        <ol class="journey__steps">
+          <li class="reveal"><span>01</span><div><h3>Agende sua avaliação</h3><p>Fale com a nossa equipe pelo WhatsApp e escolha o melhor momento.</p></div></li>
+          <li class="reveal reveal--delay"><span>02</span><div><h3>Conte seus objetivos</h3><p>Entendemos sua rotina, suas prioridades e o que faz sentido para você.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Receba seu plano</h3><p>Definimos um protocolo personalizado e explicamos cada etapa com clareza.</p></div></li>
+          <li class="reveal reveal--delay"><span>04</span><div><h3>Acompanhe sua evolução</h3><p>Reavaliamos o percurso e ajustamos os cuidados quando necessário.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="faq section section--tint" id="duvidas">
+      <div class="container faq__grid">
+        <div class="faq__intro reveal">
+          <p class="eyebrow"><span></span> Dúvidas frequentes</p>
+          <h2>Informação também faz parte do <em>cuidado.</em></h2>
+          <p>Reunimos respostas rápidas para ajudar no seu primeiro contato. A avaliação é o momento ideal para orientar sua indicação de forma individual.</p>
+          <img loading="lazy" src="{{ url_for('static', filename='img/generated/15-textura-raio-de-sol.webp') }}" width="1200" height="500" alt="Textura abstrata inspirada nos raios de sol e nas cores da clínica">
+        </div>
+        <div class="accordion reveal reveal--delay">
+          <article class="accordion__item is-open">
+            <h3><button type="button" aria-expanded="true"><span>Preciso fazer uma avaliação antes?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="accordion__panel"><p>Sim. A avaliação ajuda a entender suas necessidades, alinhar expectativas e definir quais cuidados são mais adequados para você.</p></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false"><span>Os tratamentos são personalizados?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="accordion__panel"><p>Sim. O protocolo considera sua avaliação, seus objetivos e sua resposta ao longo do acompanhamento.</p></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false"><span>Em quanto tempo aparecem os resultados?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="accordion__panel"><p>O tempo varia conforme o tratamento e as características individuais. Durante a avaliação, explicamos a evolução esperada sem promessas irreais.</p></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false"><span>Como faço para agendar?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="accordion__panel"><p>Você pode usar qualquer botão de WhatsApp do site ou preencher o formulário abaixo. A equipe dará continuidade ao agendamento.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contato">
+      <div class="container contact__grid">
+        <div class="contact__info reveal">
+          <p class="eyebrow eyebrow--light"><span></span> Agende sua avaliação</p>
+          <h2>Vamos conversar sobre o que você deseja transformar?</h2>
+          <p>Preencha os campos e você será direcionada ao nosso WhatsApp com a mensagem pronta.</p>
+          <div class="contact__details">
+            <a href="https://wa.me/{{ whatsapp_number }}" target="_blank" rel="noopener"><span>WhatsApp</span><strong>(41) 99800-4130</strong></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Avenida+das+Am%C3%A9ricas+1884+S%C3%A3o+Jos%C3%A9+dos+Pinhais+PR" target="_blank" rel="noopener"><span>Endereço</span><strong>Av. das Américas, 1884, sala 11<br>São José dos Pinhais — PR</strong></a>
+          </div>
+        </div>
+
+        <form class="booking-form reveal reveal--delay" action="{{ url_for('agendar') }}" method="post">
+          <div class="form-field">
+            <label for="nome">Como podemos chamar você?</label>
+            <input id="nome" name="nome" type="text" maxlength="80" autocomplete="name" placeholder="Seu nome">
+          </div>
+          <div class="form-field">
+            <label for="interesse">Qual tratamento mais interessa?</label>
+            <select id="interesse" name="interesse">
+              <option>Avaliação personalizada</option>
+              <option>Emagrecimento e definição corporal</option>
+              <option>Protocolo Body Slim</option>
+              <option>Glúteo Natural</option>
+              <option>Harmonização facial</option>
+              <option>Preenchimento labial</option>
+              <option>Tratamentos faciais</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="mensagem">Quer contar mais alguma coisa? <small>(opcional)</small></label>
+            <textarea id="mensagem" name="mensagem" maxlength="500" rows="4" placeholder="Escreva sua dúvida ou objetivo"></textarea>
+          </div>
+          <button class="button button--primary button--full" type="submit">Conversar pelo WhatsApp <span>→</span></button>
+          <small class="booking-form__privacy">Ao continuar, você será direcionada ao WhatsApp da Raio de Sol.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__main">
+      <a class="footer__brand" href="#inicio"><img loading="lazy" src="{{ url_for('static', filename='img/logo.png') }}" width="210" height="140" alt="Raio de Sol Clínica de Estética Avançada"></a>
+      <p>Estética avançada para valorizar sua beleza com naturalidade, cuidado e propósito.</p>
+      <nav aria-label="Links do rodapé"><a href="#sobre">A clínica</a><a href="#tratamentos">Tratamentos</a><a href="#resultados">Resultados</a><a href="#contato">Contato</a></nav>
+      <a class="instagram-link" href="{{ instagram_url }}" target="_blank" rel="noopener" aria-label="Acompanhar Raio de Sol no Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.76 3.76 0 0 0 4 7.75v8.5A3.76 3.76 0 0 0 7.75 20h8.5A3.76 3.76 0 0 0 20 16.25v-8.5A3.76 3.76 0 0 0 16.25 4h-8.5Zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+        @raiodesolesteticapremium
+      </a>
+    </div>
+    <div class="container footer__bottom"><span>© <span id="current-year"></span> Raio de Sol. Todos os direitos reservados.</span><span>São José dos Pinhais — PR</span></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar com a Raio de Sol pelo WhatsApp">
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.05 3A12.82 12.82 0 0 0 5.07 22.45L3.2 29l6.71-1.76A12.8 12.8 0 1 0 16.05 3Zm0 23.33c-1.9 0-3.76-.51-5.38-1.47l-.39-.23-3.98 1.04 1.06-3.88-.25-.4a10.52 10.52 0 1 1 8.94 4.94Zm5.77-7.88c-.32-.16-1.87-.92-2.16-1.03-.29-.1-.5-.16-.71.16-.21.31-.82 1.03-1 1.24-.18.21-.37.24-.68.08-.32-.16-1.33-.49-2.54-1.57a9.54 9.54 0 0 1-1.75-2.18c-.18-.32-.02-.49.14-.64.14-.14.32-.37.47-.55.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.25-.62-.51-.54-.71-.55h-.6c-.21 0-.55.08-.84.39-.29.32-1.1 1.08-1.1 2.63 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.67.76.24 1.44.21 1.99.13.61-.09 1.87-.76 2.13-1.5.26-.74.26-1.37.18-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
+    <span class="whatsapp-float__label">Fale conosco</span>
+  </a>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+</html>
