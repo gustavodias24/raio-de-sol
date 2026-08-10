@@ -318,26 +318,135 @@
       </div>
     </section>
 
-    <section class="results section section--tint" id="resultados">
-      <div class="container">
-        <div class="section-heading section-heading--split reveal">
-          <div>
-            <p class="eyebrow"><span></span> Resultados reais</p>
-            <h2>Evoluções que contam <em>histórias.</em></h2>
-          </div>
-          <p>Conheça alguns registros de atendimentos realizados. Cada organismo responde de uma forma e os resultados podem variar.</p>
+   <section class="results section section--tint" id="resultados">
+  <div class="container">
+    <div class="section-heading section-heading--split reveal">
+      <div>
+        <p class="eyebrow"><span></span> Resultados reais</p>
+        <h2>Evoluções que contam <em>histórias.</em></h2>
+      </div>
+
+      <p>
+        Conheça alguns registros de atendimentos realizados. Cada organismo
+        responde de uma forma e os resultados podem variar.
+      </p>
+    </div>
+
+    <div
+      class="results__rail"
+      role="region"
+      aria-label="Galeria de resultados"
+      tabindex="0"
+      style="align-items: start;"
+    >
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-01-frontal.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de evolução corporal frontal"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
         </div>
 
-        <div class="results__rail" role="region" aria-label="Galeria de resultados" tabindex="0">
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-01-frontal.webp') }}" width="900" height="1060" alt="Comparativo de evolução corporal frontal"><span>Antes</span><span>Depois</span></div><figcaption><strong>Evolução corporal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-02-lateral.webp') }}" width="900" height="1060" alt="Comparativo de evolução corporal lateral"><span>Antes</span><span>Depois</span></div><figcaption><strong>Contorno corporal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-03-abdomen.webp') }}" width="900" height="1060" alt="Comparativo de evolução na região abdominal"><span>Antes</span><span>Depois</span></div><figcaption><strong>Região abdominal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-04-labial.webp') }}" width="900" height="1060" alt="Comparativo de preenchimento labial natural"><span>Antes</span><span>Depois</span></div><figcaption><strong>Preenchimento labial</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-05-bodyslim.webp') }}" width="900" height="1060" alt="Comparativo de resultado do protocolo Body Slim"><span>Antes</span><span>Depois</span></div><figcaption><strong>Protocolo Body Slim</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
+        <figcaption>
+          <strong>Evolução corporal</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-02-lateral.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de evolução corporal lateral"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
         </div>
-        <p class="results__disclaimer">Imagens sem filtros de promessa. Resultados individuais variam conforme características, hábitos e resposta de cada pessoa. A indicação é definida após avaliação.</p>
-      </div>
-    </section>
+
+        <figcaption>
+          <strong>Contorno corporal</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-03-abdomen.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de evolução na região abdominal"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Região abdominal</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-04-labial.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de preenchimento labial natural"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Preenchimento labial</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-05-bodyslim.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de resultado do protocolo Body Slim"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Protocolo Body Slim</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="results__disclaimer">
+      Imagens sem filtros de promessa. Resultados individuais variam conforme
+      características, hábitos e resposta de cada pessoa. A indicação é
+      definida após avaliação.
+    </p>
+  </div>
+</section>
 
     <section class="journey section">
       <div class="container">
