@@ -184,6 +184,7 @@
         <a href="#sobre">A clínica</a>
         <a href="#tratamentos">Tratamentos</a>
         <a href="#resultados">Resultados</a>
+        <a href="#conteudos">Conteúdos</a>
         <a href="#duvidas">Dúvidas</a>
         <a class="nav__cta" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
       </nav>
@@ -271,46 +272,7 @@
           <p>Uma jornada personalizada para quem deseja se sentir mais confiante, com acompanhamento próximo e escolhas que respeitam cada fase.</p>
         </div>
 
-        <div class="feature-cards">
-          <article class="feature-card feature-card--large reveal">
-            <div class="feature-card__media">
-              <img loading="lazy" src="{{ url_for('static', filename='img/generated/02-tratamento-corporal.webp') }}" width="1200" height="900" alt="Tratamento corporal não invasivo realizado em clínica">
-              <span>Corporal</span>
-            </div>
-            <div class="feature-card__content">
-              <small>Redução de medidas • contorno • bem-estar</small>
-              <h3>Emagrecimento e definição corporal</h3>
-              <p>Protocolos combinados para acompanhar seus objetivos, trabalhar medidas, textura da pele e contorno corporal de forma individualizada.</p>
-              <a href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20os%20tratamentos%20para%20emagrecimento." target="_blank" rel="noopener" aria-label="Saber mais sobre emagrecimento e definição corporal">Quero saber mais <span>→</span></a>
-            </div>
-          </article>
-
-          <article class="feature-card feature-card--large reveal reveal--delay">
-            <div class="feature-card__media">
-              <img loading="lazy" src="{{ url_for('static', filename='img/generated/04-gluteo-natural.webp') }}" width="1200" height="900" alt="Atendimento estético corporal para valorização do contorno dos glúteos">
-              <span>Exclusivo</span>
-            </div>
-            <div class="feature-card__content">
-              <small>Contorno • firmeza • naturalidade</small>
-              <h3>Glúteo Natural</h3>
-              <p>Um cuidado focado em valorizar o formato natural, melhorar a aparência da pele e realçar o contorno com planejamento personalizado.</p>
-              <a href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Quero%20conhecer%20o%20protocolo%20Gl%C3%BAteo%20Natural." target="_blank" rel="noopener" aria-label="Saber mais sobre Glúteo Natural">Quero saber mais <span>→</span></a>
-            </div>
-          </article>
-
-          <article class="feature-card feature-card--large reveal">
-            <div class="feature-card__media">
-              <img loading="lazy" src="{{ url_for('static', filename='img/generated/03-harmonizacao-facial.webp') }}" width="1200" height="900" alt="Consulta personalizada de harmonização facial">
-              <span>Facial</span>
-            </div>
-            <div class="feature-card__content">
-              <small>Equilíbrio • suavidade • identidade</small>
-              <h3>Harmonização facial</h3>
-              <p>Planejamento cuidadoso para equilibrar proporções e valorizar os seus traços sem apagar aquilo que torna sua beleza única.</p>
-              <a href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20harmoniza%C3%A7%C3%A3o%20facial." target="_blank" rel="noopener" aria-label="Saber mais sobre harmonização facial">Quero saber mais <span>→</span></a>
-            </div>
-          </article>
-        </div>
+        
 
         <div class="service-grid reveal">
           <article class="service-card"><img loading="lazy" src="{{ url_for('static', filename='img/generated/11-preenchimento-labial.webp') }}" width="900" height="900" alt="Lábios com aparência natural"><div><span>01</span><h3>Preenchimento labial</h3><p>Contorno, hidratação e volume equilibrado.</p></div></article>
@@ -349,7 +311,7 @@
           <p>Um atendimento pensado para que você se sinta segura, respeitada e bem acolhida do início ao fim.</p>
         </div>
         <div class="experience__mosaic">
-          <figure class="experience__item experience__item--tall reveal"><img loading="lazy" src="{{ url_for('static', filename='img/generated/09-profissional-estetica.webp') }}" width="900" height="1200" alt="Imagem conceitual de uma profissional de estética em ambiente elegante"><figcaption>Escuta e confiança</figcaption></figure>
+          <figure class="experience__item experience__item--tall experience__item--portrait reveal"><img loading="lazy" src="{{ url_for('static', filename='img/conteudo/profissional-raio-de-sol.webp') }}" width="1024" height="1536" alt="Profissional da Raio de Sol em retrato institucional"><figcaption>Experiência, escuta e confiança</figcaption></figure>
           <figure class="experience__item reveal reveal--delay"><img loading="lazy" src="{{ url_for('static', filename='img/generated/10-sala-tratamento.webp') }}" width="1200" height="900" alt="Sala de tratamento confortável e organizada"><figcaption>Ambiente preparado</figcaption></figure>
           <figure class="experience__item reveal"><img loading="lazy" src="{{ url_for('static', filename='img/generated/16-acompanhamento-personalizado.webp') }}" width="1200" height="900" alt="Profissional e cliente conversando durante um acompanhamento personalizado"><figcaption>Acompanhamento próximo</figcaption></figure>
           <figure class="experience__item experience__item--wide reveal reveal--delay"><img loading="lazy" src="{{ url_for('static', filename='img/generated/08-bem-estar-confiante.webp') }}" width="1200" height="900" alt="Mulher adulta confiante e confortável com sua imagem"><figcaption>Confiança que se percebe</figcaption></figure>
@@ -357,24 +319,234 @@
       </div>
     </section>
 
-    <section class="results section section--tint" id="resultados">
+   <section class="results section section--tint" id="resultados">
+  <div class="container">
+    <div class="section-heading section-heading--split reveal">
+      <div>
+        <p class="eyebrow"><span></span> Resultados reais</p>
+        <h2>Evoluções que contam <em>histórias.</em></h2>
+      </div>
+
+      <p>
+        Conheça alguns registros de atendimentos realizados. Cada organismo
+        responde de uma forma e os resultados podem variar.
+      </p>
+    </div>
+
+    <div
+      class="results__rail"
+      role="region"
+      aria-label="Galeria de resultados"
+      tabindex="0"
+      style="align-items: start;"
+    >
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-01-frontal.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de evolução corporal frontal"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Evolução corporal</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-02-lateral.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de evolução corporal lateral"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Contorno corporal</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-03-abdomen.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de evolução na região abdominal"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Região abdominal</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-04-labial.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de preenchimento labial natural"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Preenchimento labial</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-05-bodyslim.webp') }}"
+            width="712"
+            height="842"
+            style="height: auto;"
+            alt="Comparativo de resultado do protocolo Body Slim"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Protocolo Body Slim</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-06-sculp-gluteo-lateral.webp') }}"
+            width="1280"
+            height="960"
+            style="height: auto; aspect-ratio: auto;"
+            alt="Comparativo lateral de resultado do protocolo Sculp Glúteo"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Sculp Glúteo</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+
+      <figure class="result-card">
+        <div class="result-card__image">
+          <img
+            loading="lazy"
+            src="{{ url_for('static', filename='img/resultados/resultado-07-sculp-gluteo-posterior.webp') }}"
+            width="1280"
+            height="758"
+            style="height: auto; aspect-ratio: auto;"
+            alt="Comparativo posterior de resultado do protocolo Sculp Glúteo"
+          >
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+
+        <figcaption>
+          <strong>Contorno de glúteos</strong>
+          <small>Registro autorizado pela clínica</small>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="results__disclaimer">
+      Imagens sem filtros de promessa. Resultados individuais variam conforme
+      características, hábitos e resposta de cada pessoa. A indicação é
+      definida após avaliação.
+    </p>
+  </div>
+</section>
+
+    <section class="content-showcase section" id="conteudos" aria-labelledby="content-showcase-title">
       <div class="container">
         <div class="section-heading section-heading--split reveal">
           <div>
-            <p class="eyebrow"><span></span> Resultados reais</p>
-            <h2>Evoluções que contam <em>histórias.</em></h2>
+            <p class="eyebrow"><span></span> Conteúdos Raio de Sol</p>
+            <h2 id="content-showcase-title">Informação, experiências e <em>evoluções reais.</em></h2>
           </div>
-          <p>Conheça alguns registros de atendimentos realizados. Cada organismo responde de uma forma e os resultados podem variar.</p>
+          <p>Assista aos conteúdos da clínica, conheça histórias compartilhadas por clientes e veja mais detalhes dos protocolos corporais.</p>
         </div>
 
-        <div class="results__rail" role="region" aria-label="Galeria de resultados" tabindex="0">
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-01-frontal.webp') }}" width="900" height="1060" alt="Comparativo de evolução corporal frontal"><span>Antes</span><span>Depois</span></div><figcaption><strong>Evolução corporal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-02-lateral.webp') }}" width="900" height="1060" alt="Comparativo de evolução corporal lateral"><span>Antes</span><span>Depois</span></div><figcaption><strong>Contorno corporal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-03-abdomen.webp') }}" width="900" height="1060" alt="Comparativo de evolução na região abdominal"><span>Antes</span><span>Depois</span></div><figcaption><strong>Região abdominal</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-04-labial.webp') }}" width="900" height="1060" alt="Comparativo de preenchimento labial natural"><span>Antes</span><span>Depois</span></div><figcaption><strong>Preenchimento labial</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
-          <figure class="result-card"><div class="result-card__image"><img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-05-bodyslim.webp') }}" width="900" height="1060" alt="Comparativo de resultado do protocolo Body Slim"><span>Antes</span><span>Depois</span></div><figcaption><strong>Protocolo Body Slim</strong><small>Registro autorizado pela clínica</small></figcaption></figure>
+        <article class="video-feature reveal">
+          <div class="video-feature__media">
+            <video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-03.jpg') }}" aria-label="Conversa sobre estética, cuidado e autoestima">
+              <source src="{{ url_for('static', filename='video/03-conversa-sobre-estetica.mp4') }}" type="video/mp4">
+              Seu navegador não oferece suporte à reprodução de vídeo.
+            </video>
+          </div>
+          <div class="video-feature__copy">
+            <p class="eyebrow eyebrow--light"><span></span> Conteúdo em destaque</p>
+            <h3>Uma conversa sobre estética, cuidado e autoestima.</h3>
+            <p>Um bate-papo especial para entender como o cuidado estético pode fazer parte de uma jornada mais consciente, segura e personalizada.</p>
+            <a class="button button--gold" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Assisti%20aos%20conte%C3%BAdos%20do%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação <span>→</span></a>
+          </div>
+        </article>
+
+        <div class="videos__rail" role="region" aria-label="Vídeos da clínica e de resultados" tabindex="0">
+          <figure class="video-card reveal">
+            <div class="video-card__media"><video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-01.jpg') }}" aria-label="Depoimento de cliente e sua evolução"><source src="{{ url_for('static', filename='video/01-depoimento-e-evolucao.mp4') }}" type="video/mp4">Seu navegador não oferece suporte à reprodução de vídeo.</video></div>
+            <figcaption><strong>Depoimento e evolução</strong><span>Uma experiência compartilhada por quem viveu o processo.</span></figcaption>
+          </figure>
+
+          <figure class="video-card reveal reveal--delay">
+            <div class="video-card__media"><video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-02.jpg') }}" aria-label="Profissional explicando um protocolo da clínica"><source src="{{ url_for('static', filename='video/02-conheca-o-protocolo.mp4') }}" type="video/mp4">Seu navegador não oferece suporte à reprodução de vídeo.</video></div>
+            <figcaption><strong>Conheça o protocolo</strong><span>Informação clara para cuidar de você com segurança.</span></figcaption>
+          </figure>
+
+          <figure class="video-card reveal">
+            <div class="video-card__media"><video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-04.jpg') }}" aria-label="Comparativo de evolução corporal lateral"><source src="{{ url_for('static', filename='video/04-evolucao-body-slim-lateral.mp4') }}" type="video/mp4">Seu navegador não oferece suporte à reprodução de vídeo.</video></div>
+            <figcaption><strong>Body Slim — lateral</strong><span>Registro comparativo da evolução corporal.</span></figcaption>
+          </figure>
+
+          <figure class="video-card reveal reveal--delay">
+            <div class="video-card__media"><video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-05.jpg') }}" aria-label="Acompanhamento da evolução no protocolo Body Slim"><source src="{{ url_for('static', filename='video/05-evolucao-body-slim-perfil.mp4') }}" type="video/mp4">Seu navegador não oferece suporte à reprodução de vídeo.</video></div>
+            <figcaption><strong>Acompanhamento Body Slim</strong><span>Mais um registro de desenvolvimento do protocolo.</span></figcaption>
+          </figure>
+
+          <figure class="video-card reveal">
+            <div class="video-card__media"><video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-06.jpg') }}" aria-label="Comparativo de evolução do protocolo Sculp Glúteo"><source src="{{ url_for('static', filename='video/06-evolucao-sculp-gluteo.mp4') }}" type="video/mp4">Seu navegador não oferece suporte à reprodução de vídeo.</video></div>
+            <figcaption><strong>Sculp Glúteo</strong><span>Registro de evolução do contorno corporal.</span></figcaption>
+          </figure>
+
+          <figure class="video-card reveal reveal--delay">
+            <div class="video-card__media"><video controls playsinline preload="metadata" poster="{{ url_for('static', filename='img/videos/poster-07.jpg') }}" aria-label="Comparativo frontal de evolução com o Body Slim"><source src="{{ url_for('static', filename='video/07-evolucao-body-slim-frontal.mp4') }}" type="video/mp4">Seu navegador não oferece suporte à reprodução de vídeo.</video></div>
+            <figcaption><strong>Body Slim — frontal</strong><span>Comparativo visual da evolução corporal.</span></figcaption>
+          </figure>
         </div>
-        <p class="results__disclaimer">Imagens sem filtros de promessa. Resultados individuais variam conforme características, hábitos e resposta de cada pessoa. A indicação é definida após avaliação.</p>
+
+        <p class="content-showcase__disclaimer">Os registros mostram experiências individuais. Resultados variam conforme características, hábitos e resposta de cada pessoa; a indicação de qualquer protocolo depende de avaliação.</p>
       </div>
     </section>
 
@@ -466,7 +638,7 @@
     <div class="container footer__main">
       <a class="footer__brand" href="#inicio"><img loading="lazy" src="{{ url_for('static', filename='img/logo.png') }}" width="210" height="140" alt="Raio de Sol Clínica de Estética Avançada"></a>
       <p>Estética avançada para valorizar sua beleza com naturalidade, cuidado e propósito.</p>
-      <nav aria-label="Links do rodapé"><a href="#sobre">A clínica</a><a href="#tratamentos">Tratamentos</a><a href="#resultados">Resultados</a><a href="#contato">Contato</a></nav>
+      <nav aria-label="Links do rodapé"><a href="#sobre">A clínica</a><a href="#tratamentos">Tratamentos</a><a href="#resultados">Resultados</a><a href="#conteudos">Conteúdos</a><a href="#contato">Contato</a></nav>
       <a class="instagram-link" href="{{ instagram_url }}" target="_blank" rel="noopener" aria-label="Acompanhar Raio de Sol no Instagram">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.76 3.76 0 0 0 4 7.75v8.5A3.76 3.76 0 0 0 7.75 20h8.5A3.76 3.76 0 0 0 20 16.25v-8.5A3.76 3.76 0 0 0 16.25 4h-8.5Zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
         @raiodesolesteticapremium
