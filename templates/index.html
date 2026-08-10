@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Atualização visível: Perfiloplastia e Toxina Botulínica — versão 2 -->
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
@@ -163,7 +164,7 @@
 
   <div class="topbar">
     <div class="container topbar__inner">
-      <p>Estética avançada com cuidado individualizado</p>
+      <p><strong>Novidade:</strong> Perfiloplastia e Toxina Botulínica</p>
       <a href="https://www.google.com/maps/search/?api=1&query=Avenida+das+Am%C3%A9ricas+1884+S%C3%A3o+Jos%C3%A9+dos+Pinhais+PR" target="_blank" rel="noopener">
         Av. das Américas, 1884 — sala 11
       </a>
@@ -183,9 +184,9 @@
       <nav class="nav" id="menu-principal" aria-label="Navegação principal">
         <a href="#sobre">A clínica</a>
         <a href="#tratamentos">Tratamentos</a>
+        <a href="#facial">Facial</a>
         <a href="#resultados">Resultados</a>
         <a href="#conteudos">Conteúdos</a>
-        <a href="#duvidas">Dúvidas</a>
         <a class="nav__cta" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
       </nav>
     </div>
@@ -197,15 +198,27 @@
       <div class="hero__glow hero__glow--two"></div>
       <div class="container hero__grid">
         <div class="hero__copy reveal">
-          <p class="eyebrow"><span></span> Clínica de Estética Avançada</p>
+          <p class="eyebrow"><span></span> Perfiloplastia • Toxina botulínica • Estética avançada</p>
           <h1 id="hero-title">Sua melhor versão, com <em>naturalidade</em> e propósito.</h1>
-          <p class="hero__lead">Tratamentos corporais e faciais pensados para valorizar sua beleza, recuperar sua confiança e acompanhar seus objetivos de forma personalizada.</p>
+          <p class="hero__lead">Tratamentos corporais e faciais — agora também com perfiloplastia e toxina botulínica — pensados para valorizar sua beleza e acompanhar seus objetivos de forma personalizada.</p>
           <div class="hero__actions">
             <a class="button button--primary" href="https://wa.me/{{ whatsapp_number }}?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Raio%20de%20Sol." target="_blank" rel="noopener">
               Agendar minha avaliação
               <span aria-hidden="true">→</span>
             </a>
-            <a class="button button--ghost" href="#tratamentos">Conhecer tratamentos</a>
+            <a class="button button--ghost" href="#facial">Ver perfiloplastia e toxina</a>
+          </div>
+          <div class="hero__facial-highlights" aria-label="Novos tratamentos faciais">
+            <a href="#perfiloplastia">
+              <span>Novo</span>
+              <strong>Perfiloplastia</strong>
+              <small>Harmonia e proporção do perfil</small>
+            </a>
+            <a href="#toxina-botulinica">
+              <span>Novo</span>
+              <strong>Toxina botulínica</strong>
+              <small>Suavização de linhas de expressão</small>
+            </a>
           </div>
           <ul class="hero__checks" aria-label="Diferenciais">
             <li>Atendimento acolhedor</li>
@@ -308,7 +321,7 @@
       </div>
     </section>
 
-    <section class="facial-focus section" aria-labelledby="facial-focus-title">
+    <section class="facial-focus section" id="facial" aria-labelledby="facial-focus-title">
       <div class="container">
         <div class="section-heading section-heading--split reveal">
           <div>
@@ -319,7 +332,7 @@
         </div>
 
         <div class="facial-focus__grid">
-          <article class="procedure-card reveal">
+          <article class="procedure-card reveal" id="perfiloplastia">
             <figure class="procedure-card__media procedure-card__media--landscape">
               <img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-08-perfiloplastia.webp') }}" width="1280" height="961" alt="Comparativo lateral antes e depois de perfiloplastia">
               <figcaption>Registro real autorizado pela clínica</figcaption>
@@ -338,7 +351,7 @@
             </div>
           </article>
 
-          <article class="procedure-card procedure-card--reverse reveal reveal--delay">
+          <article class="procedure-card procedure-card--reverse reveal reveal--delay" id="toxina-botulinica">
             <figure class="procedure-card__media procedure-card__media--portrait">
               <img loading="lazy" src="{{ url_for('static', filename='img/resultados/resultado-09-toxina-botulinica.webp') }}" width="720" height="1280" alt="Comparativo antes e depois de aplicação de toxina botulínica na região da testa">
               <figcaption>Registro real autorizado pela clínica</figcaption>
@@ -752,7 +765,7 @@
     <div class="container footer__main">
       <a class="footer__brand" href="#inicio"><img loading="lazy" src="{{ url_for('static', filename='img/logo.png') }}" width="210" height="140" alt="Raio de Sol Clínica de Estética Avançada"></a>
       <p>Estética avançada para valorizar sua beleza com naturalidade, cuidado e propósito.</p>
-      <nav aria-label="Links do rodapé"><a href="#sobre">A clínica</a><a href="#tratamentos">Tratamentos</a><a href="#resultados">Resultados</a><a href="#conteudos">Conteúdos</a><a href="#contato">Contato</a></nav>
+      <nav aria-label="Links do rodapé"><a href="#sobre">A clínica</a><a href="#tratamentos">Tratamentos</a><a href="#facial">Perfil e toxina</a><a href="#resultados">Resultados</a><a href="#conteudos">Conteúdos</a><a href="#contato">Contato</a></nav>
       <a class="instagram-link" href="{{ instagram_url }}" target="_blank" rel="noopener" aria-label="Acompanhar Raio de Sol no Instagram">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.76 3.76 0 0 0 4 7.75v8.5A3.76 3.76 0 0 0 7.75 20h8.5A3.76 3.76 0 0 0 20 16.25v-8.5A3.76 3.76 0 0 0 16.25 4h-8.5Zm8.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
         @raiodesolesteticapremium

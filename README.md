@@ -2,6 +2,12 @@
 
 Site institucional responsivo desenvolvido com Python e Flask.
 
+## Atualização desta versão
+
+- Perfiloplastia em destaque no início do site e em seção completa.
+- Toxina botulínica em destaque no início do site e em seção completa.
+- Novos registros reais, vídeo, perguntas frequentes e opções de agendamento.
+
 ## Como executar
 
 1. Crie e ative um ambiente virtual.

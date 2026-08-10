@@ -1,0 +1,15 @@
+RAIO DE SOL — ATUALIZAÇÃO V2
+
+Esta versão inclui Perfiloplastia e Toxina Botulínica.
+
+As diferenças aparecem:
+
+1. Na faixa superior do site, com o texto “Novidade”.
+2. No primeiro bloco do site, com dois novos destaques clicáveis.
+3. No menu “Facial”.
+4. Na seção completa de Perfiloplastia e Toxina Botulínica.
+5. Na galeria de resultados e nos vídeos.
+6. Nas perguntas frequentes e no formulário de agendamento.
+
+Arquivo principal alterado: templates/index.html
+Estilos alterados: static/css/style.css
