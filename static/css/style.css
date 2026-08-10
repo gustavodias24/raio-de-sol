@@ -439,7 +439,7 @@ h2 em {
   width: 100%;
 }
 
-.hero__facial-highlights {
+.hero__method-highlights {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
@@ -447,7 +447,7 @@ h2 em {
   margin-top: 22px;
 }
 
-.hero__facial-highlights a {
+.hero__method-highlights a {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   column-gap: 11px;
@@ -461,13 +461,13 @@ h2 em {
   transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.hero__facial-highlights a:hover {
+.hero__method-highlights a:hover {
   border-color: rgba(164, 122, 47, 0.48);
   box-shadow: 0 13px 28px rgba(62, 21, 38, 0.1);
   transform: translateY(-3px);
 }
 
-.hero__facial-highlights span {
+.hero__method-highlights span {
   grid-row: 1 / span 2;
   padding: 6px 8px;
   color: #fff;
@@ -479,12 +479,12 @@ h2 em {
   text-transform: uppercase;
 }
 
-.hero__facial-highlights strong,
-.hero__facial-highlights small {
+.hero__method-highlights strong,
+.hero__method-highlights small {
   display: block;
 }
 
-.hero__facial-highlights strong {
+.hero__method-highlights strong {
   color: var(--wine-800);
   font-family: var(--serif);
   font-size: 1rem;
@@ -492,7 +492,7 @@ h2 em {
   line-height: 1.2;
 }
 
-.hero__facial-highlights small {
+.hero__method-highlights small {
   color: var(--muted);
   font-size: 0.64rem;
   line-height: 1.35;
@@ -1060,6 +1060,63 @@ h2 em {
   font-size: 0.7rem;
 }
 
+.service-list {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+  margin-top: 24px;
+  padding: clamp(26px, 4vw, 44px);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-list .eyebrow {
+  margin-bottom: 10px;
+}
+
+.service-list h3 {
+  margin: 0;
+  color: var(--wine-950);
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 2.8vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.service-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-list li {
+  padding: 11px 15px;
+  color: var(--wine-800);
+  background: var(--ivory);
+  border: 1px solid rgba(85, 21, 48, 0.11);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.service-list li::before {
+  margin-right: 7px;
+  color: var(--gold-700);
+  content: "✦";
+}
+
+.flagship-sculp {
+  background:
+    radial-gradient(circle at 8% 14%, rgba(210, 170, 92, 0.12), transparent 26%),
+    var(--ivory);
+}
+
 .facial-focus {
   background:
     radial-gradient(circle at 94% 8%, rgba(210, 170, 92, 0.12), transparent 24%),
@@ -1153,6 +1210,7 @@ h2 em {
   margin-bottom: 16px;
 }
 
+.procedure-card__copy h2,
 .procedure-card__copy h3 {
   position: relative;
   z-index: 1;
@@ -2161,6 +2219,7 @@ h2 em {
   .professional__grid,
   .procedure-card,
   .signature__grid,
+  .service-list,
   .faq__grid,
   .contact__grid {
     grid-template-columns: 1fr;
@@ -2309,7 +2368,7 @@ h2 em {
     gap: 10px;
   }
 
-  .hero__facial-highlights {
+  .hero__method-highlights {
     grid-template-columns: 1fr;
   }
 
@@ -2381,6 +2440,12 @@ h2 em {
   .contact__info h2,
   .signature__copy h2 {
     font-size: clamp(2.45rem, 12vw, 3.5rem);
+  }
+
+  .signature__copy h2 {
+    max-width: calc(100% - 54px);
+    overflow-wrap: anywhere;
+    font-size: clamp(2.1rem, 9vw, 2.55rem);
   }
 
   .section-heading--split {

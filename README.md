@@ -4,9 +4,10 @@ Site institucional responsivo desenvolvido com Python e Flask.
 
 ## Atualização desta versão
 
-- Perfiloplastia em destaque no início do site e em seção completa.
-- Toxina botulínica em destaque no início do site e em seção completa.
-- Novos registros reais, vídeo, perguntas frequentes e opções de agendamento.
+- Body Slim como primeiro destaque do cabeçalho e da página.
+- Sculp Glúteo como segundo método em destaque, com seção completa.
+- Perfiloplastia, toxina botulínica e preenchimento organizados logo depois.
+- Lista ampliada de serviços, perguntas frequentes e opções de agendamento.
 
 ## Como executar
 

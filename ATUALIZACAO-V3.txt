@@ -1,0 +1,21 @@
+RAIO DE SOL — AJUSTES DO ÁUDIO DO CLIENTE — V3
+
+Esta é a versão em que a prioridade visual foi reorganizada conforme o áudio.
+
+As diferenças aparecem logo no início do site:
+
+1. Body Slim agora é o primeiro destaque do cabeçalho e da página.
+2. Sculp Glúteo aparece em segundo lugar e ganhou uma seção completa.
+3. Perfiloplastia, Toxina Botulínica e Preenchimento aparecem depois dos métodos autorais.
+4. O menu foi reorganizado com links diretos para Body Slim e Sculp Glúteo.
+5. Foram adicionados Drenagem Linfática, Massagem, Cuidados Pós-operatórios,
+   Limpeza de Pele e Microagulhamento à lista de serviços e ao formulário.
+6. A seção de dúvidas agora explica Body Slim e Sculp Glúteo.
+
+Arquivos principais alterados:
+- templates/index.html
+- static/css/style.css
+- README.md
+
+Para conferir esta versão, execute `python index.py` e acesse
+http://127.0.0.1:5000.
